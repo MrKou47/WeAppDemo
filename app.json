@@ -1,34 +1,47 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "LOOK",
-    "navigationBarTextStyle":"black"
-  },
-  "tabBar": {
-    "color": "#ccc",
-    "selectedColor": "#ed145b",
-    "position": "bottom",
-    "borderStyle": "white",
-    "backgroundColor": "#fff",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "./images/home.png",
-        "selectedIconPath": "./images/home_h1.png"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "购买",
-        "iconPath": "./images/buy.png",
-        "selectedIconPath": "./images/buy_h1.png"
-      }
-    ]
-  },
-  "debug": true
+    "pages": [
+        "pages/home/home",
+        "pages/buy/buy",
+        "pages/cart/cart",
+        "pages/user/user"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "LOOK",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#ccc",
+        "selectedColor": "#ed145b",
+        "position": "bottom",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "list": [{
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "./images/home.png",
+                "selectedIconPath": "./images/home_h1.png"
+            },
+            {
+                "pagePath": "pages/buy/buy",
+                "text": "购买",
+                "iconPath": "./images/buy.png",
+                "selectedIconPath": "./images/buy_h1.png"
+            },
+            {
+                "pagePath": "pages/cart/cart",
+                "text": "购物车",
+                "iconPath": "./images/cart.png",
+                "selectedIconPath": "./images/cart_h1.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "个人中心",
+                "iconPath": "./images/user.png",
+                "selectedIconPath": "./images/user_h1.png"
+            }
+        ]
+    },
+    "debug": true
 }

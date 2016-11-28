@@ -24,4 +24,4 @@ let config = {
     PORTS: 6000
   }
 };
-export { config }
+export default config;

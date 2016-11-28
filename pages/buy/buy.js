@@ -1,6 +1,9 @@
 //index.js
 //获取应用实例
-var app = getApp()
+import test from '../../utils/api.js';
+var app = getApp();
+console.log("test");
+console.log(test);
 Page({
   data: {
     motto: 'Hello World',
