@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "LOOK",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#ed145b",
+    "position": "bottom",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home_h1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "购买",
+        "iconPath": "./images/buy.png",
+        "selectedIconPath": "./images/buy_h1.png"
+      }
+    ]
+  },
+  "debug": true
+}
