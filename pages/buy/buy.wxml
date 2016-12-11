@@ -1,0 +1,8 @@
+<swiper class="banner-swiper" indicator-dotbannerDatas="{{true}}" autoplay="{{false}}" interval="{{3000}}" duration="{{1000}}">
+    <block wx:for="{{bannerList}}">
+        <swiper-item>
+            <image src="{{item.image.url}}" class="slide-image" mode="scaleToFill" />
+        </swiper-item>
+    </block>
+</swiper>
+<view class="goods-container"></view>

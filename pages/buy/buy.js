@@ -1,13 +1,13 @@
 //index.js
 //获取应用实例
 import test from '../../utils/api.js';
+import { baseAjax } from "../../utils/api.js";
 var app = getApp();
 console.log("test");
 console.log(test);
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {}
+  	bannerList: []
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,14 +16,15 @@ Page({
     })
   },
   onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
-    })
+  	let that = this;
+  	baseAjax({
+  		url: '/api/banner/list?type=1',
+  		success: function (res) {
+  			console.log(res.data.banners);
+  			that.setData({
+  				bannerList: res.data.banners
+  			})
+  		},
+  	})
   }
 })
