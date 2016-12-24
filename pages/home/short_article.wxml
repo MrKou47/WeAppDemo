@@ -1,0 +1,18 @@
+<template name="short_article">
+    <view class="article-container" wx:if="{{ item.kind === 0 && item.article.article_kind === 1 }}">
+        <image class="article-banner short" src="{{ item.article.figure.url }}" mode="scaleToFill" />
+        <view class="article-info-container short">
+            <view class="article-info">
+                <view class="channel-info short">
+                    <image src="{{ item.article.media.logo_url }}" />
+                    <view>
+                        {{ item.article.media_name }} | {{ item.article.publish_timestamp }}
+                    </view>
+                </view>
+                <view class="article-des">
+                    {{ item.article.title }}
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

@@ -3,7 +3,7 @@ import config from './config.js';
 // console.log(config);
 console.log(config);
 
-let commonBaseGet = (url = '', data = {}, header = {}, success = (res)=> {}, fail= () =>{}) => {
+let commonBaseGet = (url = '', data = {}, header = {}, success = (res) => {}, fail = () => {}) => {
     return wx.request({
         url: config.dev.BASE_HOST + url,
         data: data,
@@ -15,15 +15,15 @@ let commonBaseGet = (url = '', data = {}, header = {}, success = (res)=> {}, fai
 }
 
 let successFn = (res, callback) => {
-	if (res||res.statusCode != 200) {
-		alert(res.statuscode);
-		return;
-	} else if (res.error_tip) {
-		alert(res.error_tip);
-		return;
-	} else {
-		callback();
-	}
+    if (res || res.statusCode != 200) {
+        alert(res.statuscode);
+        return;
+    } else if (res.error_tip) {
+        alert(res.error_tip);
+        return;
+    } else {
+        callback();
+    }
 
 }
 
@@ -35,8 +35,8 @@ let baseAjax = (options) => {
         method: options.method || 'get',
         success: options.success,
         fail: (err) => {
-        	console.log(err);
-        	return;
+            console.log(err);
+            return;
         }
     })
 }

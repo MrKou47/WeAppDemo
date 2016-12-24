@@ -1,0 +1,13 @@
+<template name="long_article">
+        <view class="article-container" wx:if="{{ item.kind === 0 && item.article.article_kind === 0 }}">
+        <!-- 长文章 -->
+        <image class="article-banner" src="{{ item.article.figure.url }}" mode="scaleToFill" />
+        <view class="article-info-container long">
+            <image class="article-channel-ico" src="../../images/home_channel/channelid1.png" mode="aspectFit" />
+            <view class="article-info">
+                <view class="article-title">{{ item.article.title }}</view>
+                <view class="channel-info">{{ item.article.media_name }} | {{ item.article.publish_timestamp }}</view>
+            </view>
+        </view>
+    </view>
+</template>

@@ -2,7 +2,6 @@
 //获取应用实例
 import { commonBaseGet as baseGet } from '../../utils/api.js';
 var app = getApp();
-console.log('success init home.js')
 Page({
     data: {
         title: '',
@@ -18,7 +17,7 @@ Page({
         })
     },
     onLoad: function(options) {
-        var _this = this;
+        var that = this;
         console.log('main page has been onload');
         baseGet(
             '/api/banner/list?type=0', {}, {},
@@ -28,11 +27,10 @@ Page({
                     return;
                 } else {
                     console.log(res.data);
-                    _this.data.bannerData = res.data;
+                    that.setData({
+                        bannerData: res.data
+                    })
                 }
-            },
-            () => {
-
             });
         baseGet(
             '/api/article/headline?method=list', {}, {},
@@ -42,7 +40,9 @@ Page({
                     return;
                 } else {
                     console.log(res.data);
-                    _this.data.initData = res.data;
+                    that.setData({
+                        initData: res.data
+                    })
                 }
             },
             () => {

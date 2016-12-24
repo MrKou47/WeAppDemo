@@ -1,3 +1,5 @@
+<import src="long_article.wxml" />
+<import src="short_article.wxml" />
 <swiper class="banner-swiper" indicator-dotbannerDatas="{{true}}" autoplay="{{false}}" interval="{{3000}}" duration="{{1000}}">
     <block wx:for="{{bannerData.banners}}">
         <swiper-item>
@@ -7,33 +9,7 @@
 </swiper>
 <block wx:for="{{ initData.items }}">
     <!-- 长文章 -->
-    <view class="article-container" wx:if="{{ item.kind === 0 && item.article.article_kind === 0 }}">
-        <!-- 长文章 -->
-        <image class="article-banner" src="{{ item.article.figure.url }}" mode="scaleToFill" />
-        <view class="article-info-container long">
-            <image class="article-channel-ico" src="../../images/home_channel/channelid1.png" mode="aspectFit" />
-            <view class="article-info">
-                <view class="article-title">{{ item.article.title }}</view>
-                <view class="channel-info">{{ item.article.media_name }} | {{ item.article.publish_timestamp }}</view>
-            </view>
-        </view>
-    </view>
+    <template is="long_article" data="{{ item }}"></template>
     <!-- 短文章 -->
-    <view class="article-container" wx:if="{{ item.kind === 0 && item.article.article_kind === 1 }}">
-        <image class="article-banner short" src="{{ item.article.figure.url }}" mode="scaleToFill" />
-        <view class="article-info-container short">
-            <view class="article-info">
-                <view class="channel-info short">
-                    <image src="{{ item.article.media.logo_url }}" />
-                    <view>
-                        {{ item.article.media_name }} | {{ item.article.publish_timestamp }}
-                    </view>
-                </view>
-                <view class="article-des">
-                    {{ item.article.title }}
-                </view>
-            </view>
-        </view>
-    </view>
+    <template is="short_article" data="{{ item }}"></template>
 </block>
-

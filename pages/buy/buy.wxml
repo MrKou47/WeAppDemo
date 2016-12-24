@@ -1,8 +1,18 @@
+<import src="topic.wxml" />
 <swiper class="banner-swiper" indicator-dotbannerDatas="{{true}}" autoplay="{{false}}" interval="{{3000}}" duration="{{1000}}">
-    <block wx:for="{{bannerList}}">
+    <block wx:for="{{ bannerList }}">
         <swiper-item>
             <image src="{{item.image.url}}" class="slide-image" mode="scaleToFill" />
         </swiper-item>
     </block>
 </swiper>
-<view class="goods-container"></view>
+<block wx:for="{{ goodsList }}">
+    <view>
+        <image src="{{ item.covers.url }}" />
+        <block wx:for="{{ item.sku }}" wx:for-index="idx" wx:for-item="sku">
+            <view wx:if="{{ idx < 10}}">
+                <image src="{{ sku.images[0].url }}" />
+            </view>
+        </block>
+    </view>
+</block>
