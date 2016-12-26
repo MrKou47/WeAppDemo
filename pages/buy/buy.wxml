@@ -1,18 +1,28 @@
 <import src="topic.wxml" />
-<swiper class="banner-swiper" indicator-dotbannerDatas="{{true}}" autoplay="{{false}}" interval="{{3000}}" duration="{{1000}}">
-    <block wx:for="{{ bannerList }}">
-        <swiper-item>
-            <image src="{{item.image.url}}" class="slide-image" mode="scaleToFill" />
-        </swiper-item>
-    </block>
-</swiper>
-<block wx:for="{{ goodsList }}">
-    <view>
-        <image src="{{ item.covers.url }}" />
-        <block wx:for="{{ item.sku }}" wx:for-index="idx" wx:for-item="sku">
-            <view wx:if="{{ idx < 10}}">
-                <image src="{{ sku.images[0].url }}" />
-            </view>
+<scroll-view class="wrapper" scroll-y="true" scroll-top="0" bindscrolltolower="loadMore">
+    <swiper class="banner-swiper" indicator-dotbannerDatas="{{true}}" autoplay="{{false}}" interval="{{3000}}" duration="{{1000}}">
+        <block wx:for="{{ bannerList }}">
+            <swiper-item>
+                <image src="{{item.image.url}}" class="slide-image" mode="scaleToFill" />
+            </swiper-item>
         </block>
-    </view>
-</block>
+    </swiper>
+    <block wx:for="{{ goodsList }}" wx:for-indedx="tindex" wx:for-item="topic">
+        <view class="topic-container">
+            <navigator class="topic-header" url="/topic?tid={{ topic.goods_list_id }}" open-type="navigate" hover-class="none">
+                <image src="{{ topic.covers[0].url }}" mode="widthFix" />
+            </navigator>
+            <scroll-view class="sku-list-container" scroll-x="true" style="width:100%">
+                <navigator class="sku-container" url="../sku/sku?sku_id={{ topic.sku[0].sku_id }}" hover-class="none">
+                    <image src="{{ topic.sku[0].images[0].url }}" mode="widthFix" />
+                </navigator>
+                <view class="sku-row-container">
+                    <navigator url="/sku?sku_id={{ item.sku_id }}" open-type="navigate" hover-class="none" class="sku-container" wx:for="{{ topic.sku }}" wx:if="{{ index < 10 && index > 1 }}">
+                        <image src="{{ item.images[0].url }}" mode="widthFix" />
+                    </navigator>
+                </view>
+            </scroll-view>
+        </view>
+    </block>
+    <view class="load-more" hidden="{{ load_more }}">加载更多</view>
+</scroll-view>

@@ -4,7 +4,7 @@ Page({
     data: {
         articleInfo: {}
     },
-    onLoad: function (options) {
-
+    onLoad: function(options) {
+        console.log(options);
     }
 });

@@ -1,0 +1,34 @@
+.topic-container {}
+
+.topic-header image {
+    width: 100%;
+}
+
+.sku-list-container {
+    width: 100%;
+    height: 500rpx;
+    align-items: center;
+}
+
+.sku-row-container {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.sku-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 212rpx;
+    width: 212rpx;
+    border: 1px solid rgb(225, 225, 225);
+}
+
+.sku-container image {
+    width: 80%;
+}
+
+.sku-container.first {
+    height: 442rpx;
+    width: 316rpx;
+}

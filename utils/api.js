@@ -33,7 +33,19 @@ let baseAjax = (options) => {
         data: options.data || {},
         header: options.header || {},
         method: options.method || 'get',
-        success: options.success,
+        success: (res) => {
+            console.log('调用baseAjax')
+            if (res.statusCode != 200) {
+                wx.showToast({
+                    title: '网络错误',
+                    icon: 'loading',
+                    duration: 2000
+                })
+            }
+            if (res) {
+                options.successFn(res);
+            }
+        },
         fail: (err) => {
             console.log(err);
             return;

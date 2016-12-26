@@ -298,99 +298,151 @@
                         "*.wxml": "wxml",
                         "*.wxss": "css",
                         "*.html": "swig",
-                        "editor": {
-                            "fontFamily": "Consolas, 'Courier New', monospace",
-                            "fontWeight": "normal",
-                            "fontSize": 16,
-                            "lineHeight": 0,
-                            "lineNumbers": "on",
-                            "rulers": [],
-                            "wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
-                            "tabSize": 4,
-                            "insertSpaces": true,
-                            "detectIndentation": true,
-                            "roundedSelection": true,
-                            "scrollBeyondLastLine": true,
-                            "wrappingColumn": 300,
-                            "wordWrap": false,
-                            "wrappingIndent": "same",
-                            "mouseWheelScrollSensitivity": 1,
-                            "quickSuggestions": true,
-                            "quickSuggestionsDelay": 10,
-                            "parameterHints": true,
-                            "autoClosingBrackets": true,
-                            "formatOnType": false,
-                            "suggestOnTriggerCharacters": true,
-                            "acceptSuggestionOnEnter": true,
-                            "snippetSuggestions": "inline",
-                            "emptySelectionClipboard": true,
-                            "wordBasedSuggestions": true,
-                            "suggestFontSize": 0,
-                            "suggestLineHeight": 0,
-                            "tabCompletion": false,
-                            "selectionHighlight": true,
-                            "overviewRulerLanes": 3,
-                            "cursorBlinking": "blink",
-                            "mouseWheelZoom": false,
-                            "cursorStyle": "line",
-                            "fontLigatures": false,
-                            "hideCursorInOverviewRuler": false,
-                            "renderWhitespace": "none",
-                            "renderControlCharacters": false,
-                            "renderIndentGuides": false,
-                            "renderLineHighlight": true,
-                            "codeLens": true,
-                            "folding": true,
-                            "glyphMargin": true,
-                            "useTabStops": true,
-                            "trimAutoWhitespace": true,
-                            "stablePeek": false,
+                        "auto-rename-tag": {
+                            "activationOnLanguage": [
+                                "*"
+                            ]
+                        },
+                        "autoprefixer": {
+                            "browsers": [
+                                "last 2 versions",
+                                "> 5%"
+                            ],
+                            "findExternalAutoprefixer": false,
                             "formatOnSave": false
                         },
+                        "color-highlight": {
+                            "enable": true,
+                            "languages": [
+                                "javascript",
+                                "scss",
+                                "css",
+                                "sass",
+                                "less",
+                                "php",
+                                "xml",
+                                "html",
+                                "json"
+                            ],
+                            "markerType": "background",
+                            "matchWords": true
+                        },
+                        "css": {
+                            "lint": {
+                                "argumentsInColorFunction": "error",
+                                "boxModel": "ignore",
+                                "compatibleVendorPrefixes": "ignore",
+                                "duplicateProperties": "ignore",
+                                "emptyRules": "warning",
+                                "float": "ignore",
+                                "fontFaceProperties": "warning",
+                                "hexColorLength": "error",
+                                "idSelector": "ignore",
+                                "ieHack": "ignore",
+                                "importStatement": "ignore",
+                                "important": "ignore",
+                                "propertyIgnoredDueToDisplay": "warning",
+                                "universalSelector": "ignore",
+                                "unknownProperties": "warning",
+                                "unknownVendorSpecificProperties": "ignore",
+                                "vendorPrefix": "warning",
+                                "zeroUnits": "ignore"
+                            },
+                            "trace": {
+                                "server": "off"
+                            },
+                            "validate": true
+                        },
+                        "debug": {
+                            "allowBreakpointsEverywhere": false,
+                            "openExplorerOnEnd": false
+                        },
                         "diffEditor": {
-                            "renderSideBySide": true,
-                            "ignoreTrimWhitespace": true
+                            "ignoreTrimWhitespace": true,
+                            "renderIndicators": true,
+                            "renderSideBySide": true
+                        },
+                        "editor": {
+                            "acceptSuggestionOnEnter": true,
+                            "autoClosingBrackets": true,
+                            "codeLens": true,
+                            "cursorBlinking": "blink",
+                            "cursorStyle": "line",
+                            "detectIndentation": true,
+                            "emptySelectionClipboard": true,
+                            "folding": true,
+                            "fontFamily": "Consolas, 'Courier New', monospace",
+                            "fontLigatures": false,
+                            "fontSize": 16,
+                            "fontWeight": "normal",
+                            "formatOnSave": false,
+                            "formatOnType": false,
+                            "glyphMargin": true,
+                            "hideCursorInOverviewRuler": false,
+                            "insertSpaces": true,
+                            "lineHeight": 0,
+                            "lineNumbers": "on",
+                            "mouseWheelScrollSensitivity": 1,
+                            "mouseWheelZoom": false,
+                            "overviewRulerLanes": 3,
+                            "parameterHints": true,
+                            "quickSuggestions": true,
+                            "quickSuggestionsDelay": 10,
+                            "renderControlCharacters": false,
+                            "renderIndentGuides": false,
+                            "renderLineHighlight": "line",
+                            "renderWhitespace": "none",
+                            "roundedSelection": true,
+                            "rulers": [],
+                            "scrollBeyondLastLine": true,
+                            "selectionHighlight": true,
+                            "snippetSuggestions": "inline",
+                            "stablePeek": false,
+                            "suggestFontSize": 0,
+                            "suggestLineHeight": 0,
+                            "suggestOnTriggerCharacters": true,
+                            "tabCompletion": false,
+                            "tabSize": 4,
+                            "trimAutoWhitespace": true,
+                            "useTabStops": true,
+                            "wordBasedSuggestions": true,
+                            "wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+                            "wordWrap": false,
+                            "wrappingColumn": 300,
+                            "wrappingIndent": "same"
                         },
                         "emmet": {
-                            "triggerExpansionOnTab": true,
+                            "excludeLanguages": [],
                             "preferences": {},
                             "syntaxProfiles": {},
-                            "excludeLanguages": []
+                            "triggerExpansionOnTab": true
                         },
-                        "workbench": {
-                            "editor": {
-                                "showTabs": true,
-                                "showIcons": true,
-                                "enablePreview": true,
-                                "enablePreviewFromQuickOpen": true,
-                                "openPositioning": "right"
-                            },
-                            "quickOpen": {
-                                "closeOnFocusLost": true
-                            },
-                            "settings": {
-                                "openDefaultSettings": true
-                            },
-                            "sideBar": {
-                                "location": "left"
-                            },
-                            "statusBar": {
-                                "visible": true
+                        "explorer": {
+                            "autoReveal": true,
+                            "enableDragAndDrop": true,
+                            "openEditors": {
+                                "dynamicHeight": true,
+                                "visible": 9
                             }
                         },
-                        "window": {
-                            "openFilesInNewWindow": true,
-                            "reopenFolders": "one",
-                            "restoreFullscreen": false,
-                            "zoomLevel": 0
+                        "extensions": {
+                            "autoUpdate": false
+                        },
+                        "file_peek": {
+                            "activeLanguages": [
+                                "typescript",
+                                "javascript",
+                                "python"
+                            ],
+                            "searchFileExtensions": [
+                                ".js",
+                                ".ts",
+                                ".html",
+                                ".css",
+                                ".scss"
+                            ]
                         },
                         "files": {
-                            "exclude": {
-                                "**/.git": true,
-                                "**/.svn": true,
-                                "**/.hg": true,
-                                "**/.DS_Store": true
-                            },
                             "associations": {
                                 "*.wxml": "wxml",
                                 "*.wxss": "css",
@@ -489,9 +541,427 @@
                                         "**/.DS_Store": true
                                     },
                                     "associations": {
-                                        "*.wxml": "html",
+                                        "*.wxml": "wxml",
                                         "*.wxss": "css",
-                                        "*.html": "swig"
+                                        "*.html": "swig",
+                                        "editor": {
+                                            "fontFamily": "Consolas, 'Courier New', monospace",
+                                            "fontWeight": "normal",
+                                            "fontSize": 16,
+                                            "lineHeight": 0,
+                                            "lineNumbers": "on",
+                                            "rulers": [],
+                                            "wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+                                            "tabSize": 4,
+                                            "insertSpaces": true,
+                                            "detectIndentation": true,
+                                            "roundedSelection": true,
+                                            "scrollBeyondLastLine": true,
+                                            "wrappingColumn": 300,
+                                            "wordWrap": false,
+                                            "wrappingIndent": "same",
+                                            "mouseWheelScrollSensitivity": 1,
+                                            "quickSuggestions": true,
+                                            "quickSuggestionsDelay": 10,
+                                            "parameterHints": true,
+                                            "autoClosingBrackets": true,
+                                            "formatOnType": false,
+                                            "suggestOnTriggerCharacters": true,
+                                            "acceptSuggestionOnEnter": true,
+                                            "snippetSuggestions": "inline",
+                                            "emptySelectionClipboard": true,
+                                            "wordBasedSuggestions": true,
+                                            "suggestFontSize": 0,
+                                            "suggestLineHeight": 0,
+                                            "tabCompletion": false,
+                                            "selectionHighlight": true,
+                                            "overviewRulerLanes": 3,
+                                            "cursorBlinking": "blink",
+                                            "mouseWheelZoom": false,
+                                            "cursorStyle": "line",
+                                            "fontLigatures": false,
+                                            "hideCursorInOverviewRuler": false,
+                                            "renderWhitespace": "none",
+                                            "renderControlCharacters": false,
+                                            "renderIndentGuides": false,
+                                            "renderLineHighlight": true,
+                                            "codeLens": true,
+                                            "folding": true,
+                                            "glyphMargin": true,
+                                            "useTabStops": true,
+                                            "trimAutoWhitespace": true,
+                                            "stablePeek": false,
+                                            "formatOnSave": false
+                                        },
+                                        "diffEditor": {
+                                            "renderSideBySide": true,
+                                            "ignoreTrimWhitespace": true
+                                        },
+                                        "emmet": {
+                                            "triggerExpansionOnTab": true,
+                                            "preferences": {},
+                                            "syntaxProfiles": {},
+                                            "excludeLanguages": []
+                                        },
+                                        "workbench": {
+                                            "editor": {
+                                                "showTabs": true,
+                                                "showIcons": true,
+                                                "enablePreview": true,
+                                                "enablePreviewFromQuickOpen": true,
+                                                "openPositioning": "right"
+                                            },
+                                            "quickOpen": {
+                                                "closeOnFocusLost": true
+                                            },
+                                            "settings": {
+                                                "openDefaultSettings": true
+                                            },
+                                            "sideBar": {
+                                                "location": "left"
+                                            },
+                                            "statusBar": {
+                                                "visible": true
+                                            }
+                                        },
+                                        "window": {
+                                            "openFilesInNewWindow": true,
+                                            "reopenFolders": "one",
+                                            "restoreFullscreen": false,
+                                            "zoomLevel": 0
+                                        },
+                                        "files": {
+                                            "exclude": {
+                                                "**/.git": true,
+                                                "**/.svn": true,
+                                                "**/.hg": true,
+                                                "**/.DS_Store": true
+                                            },
+                                            "associations": {
+                                                "*.wxml": "html",
+                                                "*.wxss": "css",
+                                                "*.html": "swig"
+                                            },
+                                            "encoding": "utf8",
+                                            "eol": "\r\n",
+                                            "trimTrailingWhitespace": false,
+                                            "autoSave": "off",
+                                            "autoSaveDelay": 1000,
+                                            "watcherExclude": {
+                                                "**/.git/objects/**": true
+                                            }
+                                        },
+                                        "explorer": {
+                                            "openEditors": {
+                                                "visible": 9,
+                                                "dynamicHeight": true
+                                            },
+                                            "autoReveal": true,
+                                            "enableDragAndDrop": true
+                                        },
+                                        "search": {
+                                            "exclude": {
+                                                "**/node_modules": true,
+                                                "**/bower_components": true
+                                            },
+                                            "quickOpen": {
+                                                "includeSymbols": false
+                                            }
+                                        },
+                                        "git": {
+                                            "enabled": true,
+                                            "path": null,
+                                            "autorefresh": true,
+                                            "autofetch": true,
+                                            "enableLongCommitWarning": true,
+                                            "allowLargeRepositories": false,
+                                            "confirmSync": true,
+                                            "countBadge": "all"
+                                        },
+                                        "http": {
+                                            "proxy": "",
+                                            "proxyStrictSSL": true,
+                                            "proxyAuthorization": null
+                                        },
+                                        "css": {
+                                            "validate": true,
+                                            "lint": {
+                                                "compatibleVendorPrefixes": "ignore",
+                                                "vendorPrefix": "warning",
+                                                "duplicateProperties": "ignore",
+                                                "emptyRules": "warning",
+                                                "importStatement": "ignore",
+                                                "boxModel": "ignore",
+                                                "universalSelector": "ignore",
+                                                "zeroUnits": "ignore",
+                                                "fontFaceProperties": "warning",
+                                                "hexColorLength": "error",
+                                                "argumentsInColorFunction": "error",
+                                                "unknownProperties": "warning",
+                                                "ieHack": "ignore",
+                                                "unknownVendorSpecificProperties": "ignore",
+                                                "propertyIgnoredDueToDisplay": "warning",
+                                                "important": "ignore",
+                                                "float": "ignore",
+                                                "idSelector": "ignore"
+                                            }
+                                        },
+                                        "scss": {
+                                            "validate": true,
+                                            "lint": {
+                                                "compatibleVendorPrefixes": "ignore",
+                                                "vendorPrefix": "warning",
+                                                "duplicateProperties": "ignore",
+                                                "emptyRules": "warning",
+                                                "importStatement": "ignore",
+                                                "boxModel": "ignore",
+                                                "universalSelector": "ignore",
+                                                "zeroUnits": "ignore",
+                                                "fontFaceProperties": "warning",
+                                                "hexColorLength": "error",
+                                                "argumentsInColorFunction": "error",
+                                                "unknownProperties": "warning",
+                                                "ieHack": "ignore",
+                                                "unknownVendorSpecificProperties": "ignore",
+                                                "propertyIgnoredDueToDisplay": "warning",
+                                                "important": "ignore",
+                                                "float": "ignore",
+                                                "idSelector": "ignore"
+                                            }
+                                        },
+                                        "less": {
+                                            "validate": true,
+                                            "lint": {
+                                                "compatibleVendorPrefixes": "ignore",
+                                                "vendorPrefix": "warning",
+                                                "duplicateProperties": "ignore",
+                                                "emptyRules": "warning",
+                                                "importStatement": "ignore",
+                                                "boxModel": "ignore",
+                                                "universalSelector": "ignore",
+                                                "zeroUnits": "ignore",
+                                                "fontFaceProperties": "warning",
+                                                "hexColorLength": "error",
+                                                "argumentsInColorFunction": "error",
+                                                "unknownProperties": "warning",
+                                                "ieHack": "ignore",
+                                                "unknownVendorSpecificProperties": "ignore",
+                                                "propertyIgnoredDueToDisplay": "warning",
+                                                "important": "ignore",
+                                                "float": "ignore",
+                                                "idSelector": "ignore"
+                                            }
+                                        },
+                                        "debug": {
+                                            "allowBreakpointsEverywhere": false,
+                                            "openExplorerOnEnd": false
+                                        },
+                                        "html": {
+                                            "format": {
+                                                "enable": true,
+                                                "wrapLineLength": 120,
+                                                "unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, script, select, small, span, strong, sub, sup, textarea, tt, var",
+                                                "indentInnerHtml": false,
+                                                "preserveNewLines": true,
+                                                "maxPreserveNewLines": null,
+                                                "indentHandlebars": false,
+                                                "endWithNewline": false,
+                                                "extraLiners": "head, body, /html"
+                                            },
+                                            "suggest": {
+                                                "angular1": true,
+                                                "ionic": true,
+                                                "html5": true
+                                            }
+                                        },
+                                        "json": {
+                                            "schemas": [],
+                                            "format": {
+                                                "enable": true
+                                            }
+                                        },
+                                        "markdown": {
+                                            "styles": []
+                                        },
+                                        "php": {
+                                            "validate": {
+                                                "enable": true,
+                                                "executablePath": null,
+                                                "run": "onSave"
+                                            }
+                                        },
+                                        "typescript": {
+                                            "tsdk": null,
+                                            "disableAutomaticTypeAcquisition": false,
+                                            "check": {
+                                                "workspaceVersion": true,
+                                                "tscVersion": false
+                                            },
+                                            "tsserver": {
+                                                "trace": "off"
+                                            },
+                                            "useCodeSnippetsOnMethodSuggest": false,
+                                            "validate": {
+                                                "enable": true
+                                            },
+                                            "format": {
+                                                "enable": true,
+                                                "insertSpaceAfterCommaDelimiter": true,
+                                                "insertSpaceAfterSemicolonInForStatements": true,
+                                                "insertSpaceBeforeAndAfterBinaryOperators": true,
+                                                "insertSpaceAfterKeywordsInControlFlowStatements": true,
+                                                "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+                                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+                                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+                                                "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+                                                "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+                                                "placeOpenBraceOnNewLineForFunctions": false,
+                                                "placeOpenBraceOnNewLineForControlBlocks": false
+                                            }
+                                        },
+                                        "javascript": {
+                                            "validate": {
+                                                "enable": true
+                                            },
+                                            "format": {
+                                                "enable": true,
+                                                "insertSpaceAfterCommaDelimiter": true,
+                                                "insertSpaceAfterSemicolonInForStatements": true,
+                                                "insertSpaceBeforeAndAfterBinaryOperators": true,
+                                                "insertSpaceAfterKeywordsInControlFlowStatements": true,
+                                                "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+                                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+                                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+                                                "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+                                                "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+                                                "placeOpenBraceOnNewLineForFunctions": false,
+                                                "placeOpenBraceOnNewLineForControlBlocks": false
+                                            }
+                                        },
+                                        "extensions": {
+                                            "autoUpdate": false
+                                        },
+                                        "terminal": {
+                                            "integrated": {
+                                                "shell": {
+                                                    "linux": "sh",
+                                                    "osx": "sh",
+                                                    "windows": "C:\\Windows\\system32\\cmd.exe"
+                                                },
+                                                "shellArgs": {
+                                                    "linux": [],
+                                                    "osx": [],
+                                                    "windows": []
+                                                },
+                                                "fontFamily": "",
+                                                "fontLigatures": false,
+                                                "fontSize": 0,
+                                                "lineHeight": 1.2,
+                                                "cursorBlinking": false,
+                                                "setLocaleVariables": false,
+                                                "commandsToSkipShell": [
+                                                    "editor.action.toggleTabFocusMode",
+                                                    "workbench.action.debug.continue",
+                                                    "workbench.action.debug.restart",
+                                                    "workbench.action.debug.run",
+                                                    "workbench.action.debug.start",
+                                                    "workbench.action.debug.stop",
+                                                    "workbench.action.quickOpen",
+                                                    "workbench.action.showCommands",
+                                                    "workbench.action.terminal.clear",
+                                                    "workbench.action.terminal.copySelection",
+                                                    "workbench.action.terminal.focus",
+                                                    "workbench.action.terminal.focusNext",
+                                                    "workbench.action.terminal.focusPrevious",
+                                                    "workbench.action.terminal.kill",
+                                                    "workbench.action.terminal.new",
+                                                    "workbench.action.terminal.paste",
+                                                    "workbench.action.terminal.runSelectedText",
+                                                    "workbench.action.terminal.scrollDown",
+                                                    "workbench.action.terminal.scrollDownPage",
+                                                    "workbench.action.terminal.scrollToBottom",
+                                                    "workbench.action.terminal.scrollToTop",
+                                                    "workbench.action.terminal.scrollUp",
+                                                    "workbench.action.terminal.scrollUpPage",
+                                                    "workbench.action.terminal.toggleTerminal"
+                                                ]
+                                            },
+                                            "external": {
+                                                "windowsExec": "%COMSPEC%",
+                                                "osxExec": "Terminal.app",
+                                                "linuxExec": "xterm"
+                                            }
+                                        },
+                                        "problems": {
+                                            "autoReveal": true
+                                        },
+                                        "telemetry": {
+                                            "enableTelemetry": true,
+                                            "enableCrashReporter": true
+                                        },
+                                        "vsicons": {
+                                            "hideFolders": false,
+                                            "hideCustomFolderIcons": false,
+                                            "hideIconsInTabs": false,
+                                            "hideIconsEditors": false,
+                                            "useFileAssociations": false,
+                                            "associations": [],
+                                            "icons": ""
+                                        },
+                                        "color-highlight": {
+                                            "enable": true,
+                                            "languages": [
+                                                "javascript",
+                                                "scss",
+                                                "css",
+                                                "sass",
+                                                "less",
+                                                "php",
+                                                "xml",
+                                                "html",
+                                                "json"
+                                            ],
+                                            "matchWords": true,
+                                            "markerType": "background"
+                                        },
+                                        "autoprefixer": {
+                                            "findExternalAutoprefixer": false,
+                                            "browsers": [
+                                                "last 2 versions",
+                                                "> 5%"
+                                            ],
+                                            "formatOnSave": false
+                                        },
+                                        "auto-rename-tag": {
+                                            "activationOnLanguage": [
+                                                "*"
+                                            ]
+                                        },
+                                        "file_peek": {
+                                            "activeLanguages": [
+                                                "typescript",
+                                                "javascript",
+                                                "python"
+                                            ],
+                                            "searchFileExtensions": [
+                                                ".js",
+                                                ".ts",
+                                                ".html",
+                                                ".css",
+                                                ".scss"
+                                            ]
+                                        },
+                                        "mocha": {
+                                            "options": {},
+                                            "files": {
+                                                "glob": "test/**/*.js",
+                                                "ignore": [
+                                                    "**/.git/**/*",
+                                                    "**/node_modules/**/*"
+                                                ]
+                                            },
+                                            "env": {}
+                                        }
                                     },
                                     "encoding": "utf8",
                                     "eol": "\r\n",
@@ -814,22 +1284,162 @@
                                     "env": {}
                                 }
                             },
-                            "encoding": "utf8",
-                            "eol": "\r\n",
-                            "trimTrailingWhitespace": false,
                             "autoSave": "off",
                             "autoSaveDelay": 1000,
+                            "encoding": "utf8",
+                            "eol": "\r\n",
+                            "exclude": {
+                                "**/.git": true,
+                                "**/.svn": true,
+                                "**/.hg": true,
+                                "**/.DS_Store": true
+                            },
+                            "hotExit": true,
+                            "insertFinalNewline": false,
+                            "trimTrailingWhitespace": false,
                             "watcherExclude": {
                                 "**/.git/objects/**": true
                             }
                         },
-                        "explorer": {
-                            "openEditors": {
-                                "visible": 9,
-                                "dynamicHeight": true
+                        "git": {
+                            "allowLargeRepositories": false,
+                            "autofetch": true,
+                            "autorefresh": true,
+                            "confirmSync": true,
+                            "countBadge": "all",
+                            "enableLongCommitWarning": true,
+                            "enabled": true,
+                            "path": null
+                        },
+                        "html": {
+                            "format": {
+                                "enable": true,
+                                "endWithNewline": false,
+                                "extraLiners": "head, body, /html",
+                                "indentHandlebars": false,
+                                "indentInnerHtml": false,
+                                "maxPreserveNewLines": null,
+                                "preserveNewLines": true,
+                                "unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, pre, q, samp, select, small, span, strong, sub, sup, textarea, tt, var",
+                                "wrapLineLength": 120
                             },
-                            "autoReveal": true,
-                            "enableDragAndDrop": true
+                            "suggest": {
+                                "angular1": true,
+                                "html5": true,
+                                "ionic": true
+                            },
+                            "trace": {
+                                "server": "off"
+                            }
+                        },
+                        "http": {
+                            "proxy": "",
+                            "proxyAuthorization": null,
+                            "proxyStrictSSL": true
+                        },
+                        "javascript": {
+                            "format": {
+                                "enable": true,
+                                "insertSpaceAfterCommaDelimiter": true,
+                                "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+                                "insertSpaceAfterKeywordsInControlFlowStatements": true,
+                                "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+                                "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+                                "insertSpaceAfterSemicolonInForStatements": true,
+                                "insertSpaceBeforeAndAfterBinaryOperators": true,
+                                "placeOpenBraceOnNewLineForControlBlocks": false,
+                                "placeOpenBraceOnNewLineForFunctions": false
+                            },
+                            "validate": {
+                                "enable": true
+                            }
+                        },
+                        "json": {
+                            "format": {
+                                "enable": true
+                            },
+                            "schemas": [],
+                            "trace": {
+                                "server": "off"
+                            }
+                        },
+                        "less": {
+                            "lint": {
+                                "argumentsInColorFunction": "error",
+                                "boxModel": "ignore",
+                                "compatibleVendorPrefixes": "ignore",
+                                "duplicateProperties": "ignore",
+                                "emptyRules": "warning",
+                                "float": "ignore",
+                                "fontFaceProperties": "warning",
+                                "hexColorLength": "error",
+                                "idSelector": "ignore",
+                                "ieHack": "ignore",
+                                "importStatement": "ignore",
+                                "important": "ignore",
+                                "propertyIgnoredDueToDisplay": "warning",
+                                "universalSelector": "ignore",
+                                "unknownProperties": "warning",
+                                "unknownVendorSpecificProperties": "ignore",
+                                "vendorPrefix": "warning",
+                                "zeroUnits": "ignore"
+                            },
+                            "validate": true
+                        },
+                        "markdown": {
+                            "preview": {
+                                "fontFamily": "'Segoe WPC', 'Segoe UI', 'SFUIText-Light', 'HelveticaNeue-Light'",
+                                "fontSize": 14,
+                                "lineHeight": 1.6
+                            },
+                            "previewFrontMatter": "hide",
+                            "styles": []
+                        },
+                        "mocha": {
+                            "env": {},
+                            "files": {
+                                "glob": "test/**/*.js",
+                                "ignore": [
+                                    "**/.git/**/*",
+                                    "**/node_modules/**/*"
+                                ]
+                            },
+                            "options": {}
+                        },
+                        "php": {
+                            "validate": {
+                                "enable": true,
+                                "executablePath": null,
+                                "run": "onSave"
+                            }
+                        },
+                        "problems": {
+                            "autoReveal": true
+                        },
+                        "scss": {
+                            "lint": {
+                                "argumentsInColorFunction": "error",
+                                "boxModel": "ignore",
+                                "compatibleVendorPrefixes": "ignore",
+                                "duplicateProperties": "ignore",
+                                "emptyRules": "warning",
+                                "float": "ignore",
+                                "fontFaceProperties": "warning",
+                                "hexColorLength": "error",
+                                "idSelector": "ignore",
+                                "ieHack": "ignore",
+                                "importStatement": "ignore",
+                                "important": "ignore",
+                                "propertyIgnoredDueToDisplay": "warning",
+                                "universalSelector": "ignore",
+                                "unknownProperties": "warning",
+                                "unknownVendorSpecificProperties": "ignore",
+                                "vendorPrefix": "warning",
+                                "zeroUnits": "ignore"
+                            },
+                            "validate": true
                         },
                         "search": {
                             "exclude": {
@@ -840,197 +1450,17 @@
                                 "includeSymbols": false
                             }
                         },
-                        "git": {
-                            "enabled": true,
-                            "path": null,
-                            "autorefresh": true,
-                            "autofetch": true,
-                            "enableLongCommitWarning": true,
-                            "allowLargeRepositories": false,
-                            "confirmSync": true,
-                            "countBadge": "all"
-                        },
-                        "http": {
-                            "proxy": "",
-                            "proxyStrictSSL": true,
-                            "proxyAuthorization": null
-                        },
-                        "css": {
-                            "validate": true,
-                            "lint": {
-                                "compatibleVendorPrefixes": "ignore",
-                                "vendorPrefix": "warning",
-                                "duplicateProperties": "ignore",
-                                "emptyRules": "warning",
-                                "importStatement": "ignore",
-                                "boxModel": "ignore",
-                                "universalSelector": "ignore",
-                                "zeroUnits": "ignore",
-                                "fontFaceProperties": "warning",
-                                "hexColorLength": "error",
-                                "argumentsInColorFunction": "error",
-                                "unknownProperties": "warning",
-                                "ieHack": "ignore",
-                                "unknownVendorSpecificProperties": "ignore",
-                                "propertyIgnoredDueToDisplay": "warning",
-                                "important": "ignore",
-                                "float": "ignore",
-                                "idSelector": "ignore"
-                            }
-                        },
-                        "scss": {
-                            "validate": true,
-                            "lint": {
-                                "compatibleVendorPrefixes": "ignore",
-                                "vendorPrefix": "warning",
-                                "duplicateProperties": "ignore",
-                                "emptyRules": "warning",
-                                "importStatement": "ignore",
-                                "boxModel": "ignore",
-                                "universalSelector": "ignore",
-                                "zeroUnits": "ignore",
-                                "fontFaceProperties": "warning",
-                                "hexColorLength": "error",
-                                "argumentsInColorFunction": "error",
-                                "unknownProperties": "warning",
-                                "ieHack": "ignore",
-                                "unknownVendorSpecificProperties": "ignore",
-                                "propertyIgnoredDueToDisplay": "warning",
-                                "important": "ignore",
-                                "float": "ignore",
-                                "idSelector": "ignore"
-                            }
-                        },
-                        "less": {
-                            "validate": true,
-                            "lint": {
-                                "compatibleVendorPrefixes": "ignore",
-                                "vendorPrefix": "warning",
-                                "duplicateProperties": "ignore",
-                                "emptyRules": "warning",
-                                "importStatement": "ignore",
-                                "boxModel": "ignore",
-                                "universalSelector": "ignore",
-                                "zeroUnits": "ignore",
-                                "fontFaceProperties": "warning",
-                                "hexColorLength": "error",
-                                "argumentsInColorFunction": "error",
-                                "unknownProperties": "warning",
-                                "ieHack": "ignore",
-                                "unknownVendorSpecificProperties": "ignore",
-                                "propertyIgnoredDueToDisplay": "warning",
-                                "important": "ignore",
-                                "float": "ignore",
-                                "idSelector": "ignore"
-                            }
-                        },
-                        "debug": {
-                            "allowBreakpointsEverywhere": false,
-                            "openExplorerOnEnd": false
-                        },
-                        "html": {
-                            "format": {
-                                "enable": true,
-                                "wrapLineLength": 120,
-                                "unformatted": "a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, q, samp, script, select, small, span, strong, sub, sup, textarea, tt, var",
-                                "indentInnerHtml": false,
-                                "preserveNewLines": true,
-                                "maxPreserveNewLines": null,
-                                "indentHandlebars": false,
-                                "endWithNewline": false,
-                                "extraLiners": "head, body, /html"
-                            },
-                            "suggest": {
-                                "angular1": true,
-                                "ionic": true,
-                                "html5": true
-                            }
-                        },
-                        "json": {
-                            "schemas": [],
-                            "format": {
-                                "enable": true
-                            }
-                        },
-                        "markdown": {
-                            "styles": []
-                        },
-                        "php": {
-                            "validate": {
-                                "enable": true,
-                                "executablePath": null,
-                                "run": "onSave"
-                            }
-                        },
-                        "typescript": {
-                            "tsdk": null,
-                            "disableAutomaticTypeAcquisition": false,
-                            "check": {
-                                "workspaceVersion": true,
-                                "tscVersion": false
-                            },
-                            "tsserver": {
-                                "trace": "off"
-                            },
-                            "useCodeSnippetsOnMethodSuggest": false,
-                            "validate": {
-                                "enable": true
-                            },
-                            "format": {
-                                "enable": true,
-                                "insertSpaceAfterCommaDelimiter": true,
-                                "insertSpaceAfterSemicolonInForStatements": true,
-                                "insertSpaceBeforeAndAfterBinaryOperators": true,
-                                "insertSpaceAfterKeywordsInControlFlowStatements": true,
-                                "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
-                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
-                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
-                                "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
-                                "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
-                                "placeOpenBraceOnNewLineForFunctions": false,
-                                "placeOpenBraceOnNewLineForControlBlocks": false
-                            }
-                        },
-                        "javascript": {
-                            "validate": {
-                                "enable": true
-                            },
-                            "format": {
-                                "enable": true,
-                                "insertSpaceAfterCommaDelimiter": true,
-                                "insertSpaceAfterSemicolonInForStatements": true,
-                                "insertSpaceBeforeAndAfterBinaryOperators": true,
-                                "insertSpaceAfterKeywordsInControlFlowStatements": true,
-                                "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
-                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
-                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
-                                "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
-                                "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
-                                "placeOpenBraceOnNewLineForFunctions": false,
-                                "placeOpenBraceOnNewLineForControlBlocks": false
-                            }
-                        },
-                        "extensions": {
-                            "autoUpdate": false
+                        "telemetry": {
+                            "enableCrashReporter": true,
+                            "enableTelemetry": true
                         },
                         "terminal": {
+                            "external": {
+                                "linuxExec": "xterm",
+                                "osxExec": "Terminal.app",
+                                "windowsExec": "%COMSPEC%"
+                            },
                             "integrated": {
-                                "shell": {
-                                    "linux": "sh",
-                                    "osx": "sh",
-                                    "windows": "C:\\Windows\\system32\\cmd.exe"
-                                },
-                                "shellArgs": {
-                                    "linux": [],
-                                    "osx": [],
-                                    "windows": []
-                                },
-                                "fontFamily": "",
-                                "fontLigatures": false,
-                                "fontSize": 0,
-                                "lineHeight": 1.2,
-                                "cursorBlinking": false,
-                                "setLocaleVariables": false,
                                 "commandsToSkipShell": [
                                     "editor.action.toggleTabFocusMode",
                                     "workbench.action.debug.continue",
@@ -1038,6 +1468,8 @@
                                     "workbench.action.debug.run",
                                     "workbench.action.debug.start",
                                     "workbench.action.debug.stop",
+                                    "workbench.action.openNextRecentlyUsedEditorInGroup",
+                                    "workbench.action.openPreviousRecentlyUsedEditorInGroup",
                                     "workbench.action.quickOpen",
                                     "workbench.action.showCommands",
                                     "workbench.action.terminal.clear",
@@ -1056,83 +1488,90 @@
                                     "workbench.action.terminal.scrollUp",
                                     "workbench.action.terminal.scrollUpPage",
                                     "workbench.action.terminal.toggleTerminal"
-                                ]
-                            },
-                            "external": {
-                                "windowsExec": "%COMSPEC%",
-                                "osxExec": "Terminal.app",
-                                "linuxExec": "xterm"
+                                ],
+                                "cursorBlinking": false,
+                                "fontFamily": "",
+                                "fontLigatures": false,
+                                "fontSize": 14,
+                                "lineHeight": 1.2,
+                                "scrollback": 1000,
+                                "setLocaleVariables": false,
+                                "shell": {
+                                    "linux": "sh",
+                                    "osx": "sh",
+                                    "windows": "C:\\Windows\\system32\\cmd.exe"
+                                },
+                                "shellArgs": {
+                                    "linux": [],
+                                    "osx": [],
+                                    "windows": []
+                                }
                             }
                         },
-                        "problems": {
-                            "autoReveal": true
-                        },
-                        "telemetry": {
-                            "enableTelemetry": true,
-                            "enableCrashReporter": true
+                        "typescript": {
+                            "check": {
+                                "tscVersion": false,
+                                "workspaceVersion": true
+                            },
+                            "disableAutomaticTypeAcquisition": false,
+                            "format": {
+                                "enable": true,
+                                "insertSpaceAfterCommaDelimiter": true,
+                                "insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+                                "insertSpaceAfterKeywordsInControlFlowStatements": true,
+                                "insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+                                "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+                                "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+                                "insertSpaceAfterSemicolonInForStatements": true,
+                                "insertSpaceBeforeAndAfterBinaryOperators": true,
+                                "placeOpenBraceOnNewLineForControlBlocks": false,
+                                "placeOpenBraceOnNewLineForFunctions": false
+                            },
+                            "tsdk": null,
+                            "tsserver": {
+                                "trace": "off"
+                            },
+                            "useCodeSnippetsOnMethodSuggest": false,
+                            "validate": {
+                                "enable": true
+                            }
                         },
                         "vsicons": {
-                            "hideFolders": false,
-                            "hideCustomFolderIcons": false,
-                            "hideIconsInTabs": false,
-                            "hideIconsEditors": false,
-                            "useFileAssociations": false,
-                            "associations": [],
-                            "icons": ""
+                            "dontShowNewVersionMessage": false
                         },
-                        "color-highlight": {
-                            "enable": true,
-                            "languages": [
-                                "javascript",
-                                "scss",
-                                "css",
-                                "sass",
-                                "less",
-                                "php",
-                                "xml",
-                                "html",
-                                "json"
-                            ],
-                            "matchWords": true,
-                            "markerType": "background"
+                        "window": {
+                            "fullScreenZenMode": true,
+                            "openFilesInNewWindow": true,
+                            "reopenFolders": "one",
+                            "restoreFullscreen": false,
+                            "showFullPath": false,
+                            "zoomLevel": 0
                         },
-                        "autoprefixer": {
-                            "findExternalAutoprefixer": false,
-                            "browsers": [
-                                "last 2 versions",
-                                "> 5%"
-                            ],
-                            "formatOnSave": false
-                        },
-                        "auto-rename-tag": {
-                            "activationOnLanguage": [
-                                "*"
-                            ]
-                        },
-                        "file_peek": {
-                            "activeLanguages": [
-                                "typescript",
-                                "javascript",
-                                "python"
-                            ],
-                            "searchFileExtensions": [
-                                ".js",
-                                ".ts",
-                                ".html",
-                                ".css",
-                                ".scss"
-                            ]
-                        },
-                        "mocha": {
-                            "options": {},
-                            "files": {
-                                "glob": "test/**/*.js",
-                                "ignore": [
-                                    "**/.git/**/*",
-                                    "**/node_modules/**/*"
-                                ]
+                        "workbench": {
+                            "activityBar": {
+                                "visible": true
                             },
-                            "env": {}
+                            "editor": {
+                                "enablePreview": true,
+                                "enablePreviewFromQuickOpen": true,
+                                "openPositioning": "right",
+                                "showIcons": true,
+                                "showTabCloseButton": true,
+                                "showTabs": true
+                            },
+                            "quickOpen": {
+                                "closeOnFocusLost": true
+                            },
+                            "settings": {
+                                "openDefaultSettings": true
+                            },
+                            "sideBar": {
+                                "location": "left"
+                            },
+                            "statusBar": {
+                                "visible": true
+                            }
                         }
                     },
                     "autoSave": "off",
